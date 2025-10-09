@@ -6,7 +6,7 @@ export const Card = styled.div`
   background: ${cores.cinza};
   border-radius: 8px;
   padding: 8px;
-  positon: relative;
+  position: relative;
 
   ${TagContainer} {
     margin-right: 8px;

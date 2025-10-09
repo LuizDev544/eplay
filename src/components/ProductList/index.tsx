@@ -1,20 +1,20 @@
 import Product from '../Product'
 import { Container, List } from './styles'
 
-type Props = {
+export type Props = {
   title: string
   backgroundColor: 'gray' | 'black'
 }
 
 export const ProductList = ({ title, backgroundColor }: Props) => (
-  <Container>
+  <Container backgroundColor={backgroundColor}>
     <div className="container">
       <h2>{title}</h2>
       <List>
         <Product
           category="Ação"
           description="teste"
-          image="/images/cyberpunk.jpg"
+          image="../src/assets/images/images/diablo.jpg"
           infos={['-10%', 'R$ 150']}
           system="windows"
           title="Nome do Jogo"
